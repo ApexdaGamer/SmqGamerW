@@ -1,1 +1,2 @@
-# This is just a folder for plugins. If the creators want me to take these off, I will do so.
+# This is just a folder for plugins.
+Creators, if you want me to take these off, please submit an issue and I will remove as said.
