@@ -1,2 +1,0 @@
-# inside of the egg
-
