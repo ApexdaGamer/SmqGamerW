@@ -1,6 +1,10 @@
 <html>
   <body>
-    <script>video = document.getElementById('idinput').value</script>
+    <script>video = document.getElementById('idinput').value
+    function loadIframe(url) {
+      $("#frameid").attr('src',url);
+      return false;
+    } </script>
     <iframe name="iframe1" id="frameid" style="width:600px; height:480px;" allowfullscreen src='https://youtube.com/embed/${video}'></iframe>
     <button type="button" onclick='document.getElementById('frameid').src = "https://youtube.com/embed/${video}";'>Search ID</button>
     <textarea name="text" id="idinput" cols="25" rows="5">Enter Video ID</textarea>
