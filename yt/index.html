@@ -16,8 +16,8 @@
                   }
           })()
     }; </script>
-    <iframe name="iframe1" id="frameid" style="width:600px; height:480px;" allowfullscreen src=`https://youtube.com/embed/${video}`></iframe>
-    <button type="button" onclick="document.getElementById('frameid').location.reload();">Search</button>
-    <input type="text" id="idinput" name="idinput"><--- enter video id</input>
+    <iframe name="iframe1" id="frameid" style="width:600px; height:480px;" allowfullscreen src='https://youtube.com/embed/'+video></iframe>
+    <button type="button" onclick="document.getElementById('iframeid').src += '';">Search</button>
+    <input type="text" onInput="video = $('#frameid').val();" id="idinput" name="idinput"><--- enter video id</input>
   </body>
 </html>
