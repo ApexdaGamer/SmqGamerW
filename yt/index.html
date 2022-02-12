@@ -3,7 +3,8 @@
     <script>
     window.onload = init
     function init() {
-    var video = document.getElementById("idinput").value;
+    var id = document.getElementById("idinput").value;
+    var vidembed = "https://youtube.com/embed/" + id;
     }
     function loadIframe(url) {
       $("#frameid").attr('src',url);
@@ -20,8 +21,8 @@
                   }
           })()
     }; </script>
-    <iframe name="iframe1" id="frameid" style="width:600px; height:480px;" allowfullscreen src=`https://youtube.com/embed/${video}`></iframe>
+    <iframe name="iframe1" id="frameid" style="width:600px; height:480px;" allowfullscreen src=vidembed></iframe>
     <button type="button" onclick="document.getElementById('frameid').src += '';">Search</button>
-    <input type="text" onInput="video = document.getElementById('idinput').value;" id="idinput" name="idinput"><--- enter video id</input>
+    <input type="text" onInput="id = document.getElementById('idinput').value;" id="idinput" name="idinput"><--- enter video id</input>
   </body>
 </html>
