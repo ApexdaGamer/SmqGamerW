@@ -4,9 +4,20 @@
     function loadIframe(url) {
       $("#frameid").attr('src',url);
       return false;
-    } </script>
+    }
+    var Strings = {
+         create : (function() {
+                  var regexp = /{([^{]+)}/g;
+
+                  return function(str, o) {
+                       return str.replace(regexp, function(ignore, key){
+                             return (key = o[key]) == null ? '' : key;
+                      });
+                  }
+          })()
+    }; </script>
     <iframe name="iframe1" id="frameid" style="width:600px; height:480px;" allowfullscreen src='https://youtube.com/embed/${video}'></iframe>
-    <button type="button" onclick=`return loadIframe("https://youtube.com/embed/${video}")`>Search</button>
+    <button type="button" onclick="Strings.create('https://youtube.com/embed/{vid}', {vid:video});">Search</button>
     <input type="text" id="idinput" name="idinput"><--- enter video id</input>
   </body>
 </html>
