@@ -17,7 +17,7 @@
           })()
     }; </script>
     <iframe name="iframe1" id="frameid" style="width:600px; height:480px;" allowfullscreen src='https://youtube.com/embed/${video}'></iframe>
-    <button type="button" onclick="Strings.create('https://youtube.com/embed/{vid}', {vid:video});">Search</button>
+    <button type="button" onclick="document.getElementById('frameid').contentDocument.location.reload(true);">Search</button>
     <input type="text" id="idinput" name="idinput"><--- enter video id</input>
   </body>
 </html>
