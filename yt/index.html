@@ -1,6 +1,6 @@
 <html>
   <body>
-    <script>var video = document.getElementById("idinput").value;
+    <script>var video = document.getElementById("idinput").src;
     function loadIframe(url) {
       $("#frameid").attr('src',url);
       return false;
@@ -17,7 +17,7 @@
           })()
     }; </script>
     <iframe name="iframe1" id="frameid" style="width:600px; height:480px;" allowfullscreen src='https://youtube.com/embed/'+video></iframe>
-    <button type="button" onclick="document.getElementById('iframeid').src += '';">Search</button>
-    <input type="text" onInput="video = $('#frameid').val();" id="idinput" name="idinput"><--- enter video id</input>
+    <button type="button" onclick="document.getElementById('frameid').src += '';">Search</button>
+    <input type="text" onInput="video = document.getElementById('idinput').src;" id="idinput" name="idinput"><--- enter video id</input>
   </body>
 </html>
