@@ -6,11 +6,11 @@
       var id = document.getElementById("idinput").value;
       var vidembed = "https://youtube.com/embed/" + id;
       document.getElementById("frameid").src = vidembed
-    };
-    function searchPress() {
-      document.getElementById('frameid').src += '';
-      id = document.getElementById("idinput").value;
-      vidembed = "https://youtube.com/embed/" + id;
+      function searchPress() {
+        document.getElementById('frameid').src += '';
+        id = document.getElementById("idinput").value;
+        vidembed = "https://youtube.com/embed/" + id;
+      };
     };
     function loadIframe(url) {
       $("#frameid").attr('src',url);
