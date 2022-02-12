@@ -20,21 +20,6 @@
       var id = document.getElementById("idinput").value;
       vidembed = "https://youtube.com/embed/" + id;
       document.getElementById("frameid").src = vidembed;
-    };
-    function loadIframe(url) {
-      $("#frameid").attr('src',url);
-      return false;
-    };
-    var Strings = {
-         create : (function() {
-                  var regexp = /{([^{]+)}/g;
-
-                  return function(str, o) {
-                       return str.replace(regexp, function(ignore, key){
-                             return (key = o[key]) == null ? '' : key;
-                      });
-                  }
-          })()
     }; </script>
     <iframe name="iframe1" id="frameid" style="width:600px; height:480px;" allowfullscreen src="http://smqap.wittnet.net/yt/"></iframe>
     <button type="button" onclick="searchPress();">Search</button>
