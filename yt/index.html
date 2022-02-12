@@ -14,7 +14,9 @@
         currentDate = Date.now();
       } while (currentDate - date < milliseconds);
     }
-    function searchPress() 
+    function searchPress() {
+      document.getElementById('frameid').src += '';
+      sleep(1500);
       vidembed = "https://youtube.com/embed/" + id;
     };
     function loadIframe(url) {
