@@ -2,15 +2,23 @@
   <body>
     <script>
     window.onload = init
+    window.onload = searchPress
     function init() {
       var id = document.getElementById("idinput").value;
       var vidembed = "https://youtube.com/embed/" + id;
-      document.getElementById("frameid").src = vidembed
-      function searchPress() {
-        document.getElementById('frameid').src += '';
-        id = document.getElementById("idinput").value;
-        vidembed = "https://youtube.com/embed/" + id;
-      };
+      document.getElementById("frameid").src = vidembed;
+    };
+    function sleep(milliseconds) {
+      const date = Date.now();
+      let currentDate = null;
+      do {
+        currentDate = Date.now();
+      } while (currentDate - date < milliseconds);
+    }
+    function searchPress() 
+      document.getElementById('frameid').src += '';
+      sleep(2500);
+      vidembed = "https://youtube.com/embed/" + id;
     };
     function loadIframe(url) {
       $("#frameid").attr('src',url);
