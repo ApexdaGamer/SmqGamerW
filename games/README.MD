@@ -1,2 +1,2 @@
 # Games Directory
-I dislike school lol
+funny haha games
