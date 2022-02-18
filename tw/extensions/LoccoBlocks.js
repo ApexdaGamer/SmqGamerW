@@ -38,7 +38,7 @@ class LoccoBlocks {
   }
 
   blockfunction(args) {
-    return true;
+    return args;
   }
 }
 
