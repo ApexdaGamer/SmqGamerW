@@ -5,12 +5,12 @@
       function searchPress() {
       document.getElementById('iframe').src += '';
       var website = document.getElementById("webinput").value;
-      document.getElementById("iframe").src = vidembed;
+      document.getElementById("iframe").src = website;
       };
     </script>
   </head>
   <body>
-    <textarea id="idinput">Enter ID</textarea>
+    <textarea id="webinput">Enter address</textarea>
     <button type="button" class="button search" onclick="searchPress();">Search</button>
     <iframe id="iframe" src="mypage.html" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
         Your browser doesn't support iframes
