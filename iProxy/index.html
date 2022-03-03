@@ -10,16 +10,16 @@
       } while (currentDate - date < milliseconds);
       }
       function searchPress() {
-      document.getElementById('iframe').src += '';
+      document.getElementById('embed').src += '';
       sleep(1000);
       var website = document.getElementById("webinput").value;
-      document.getElementById("iframe").src = website;
+      document.getElementById("embed").src = website;
       };
     </script>
   </head>
   <body>
     <textarea id="webinput">Enter address</textarea>
     <button type="button" class="button search" onclick="searchPress();">Search</button>
-    <embed type="text/html" src="https://youtube.com/" width="500" height="200"></embed>
+    <embed id="embed" type="text/html" src="https://youtube.com/" width="500" height="200"></embed>
   </body>
 </html>
