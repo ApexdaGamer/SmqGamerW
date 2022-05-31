@@ -41,7 +41,7 @@ $(document).ready(function()
  function onYouTubeApiLoad() 
         {
             // See http://goo.gl/PdPA1 to get a key for your own applications.
-            gapi.client.setApiKey('AIzaSyAzl9u4MgtsLgVM1D6wlP89w941iDf6zbE');
+            gapi.client.setApiKey('AIzaSyApsk7TTGouGDLORMcIYtyWcxArCxr2T78');
             searchYouTubeApi();
  
         }
